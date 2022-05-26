@@ -55,9 +55,10 @@ https://signup.heroku.com/account
 https://devcenter.heroku.com/articles/heroku-cli
 
 
+MONGODB -
+set path=C:/Program Files/MongoDB/Server/4.0/bin
 
-Note:
-If you make changes to your code, then you have to do these commands again - 
-git add .
-git commit -m ""
-git push heroku master
+Adding data to db from ext json file-
+1 - you can directly add through Mongo Compass
+2 - mongoimport --jsonArray --db <db_name> -collection <collection_name> --file <filename_with_full_path>
+	mongoimport --jsonArray --d <db_name> -c <collection_name> --file <filename_with_full_path>
